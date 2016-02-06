@@ -1,0 +1,19 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Sávio S. Dias' personal website
+email: diasssavio@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+   Hi there! I'm a C/C++, C, Java and Python programmer. Emphasis in desktop and web development, mostly backend applications. For web development, I have experience in HTML and Bootstrap/CSS technologies. I'm bachelor in Computer Science, and currently a master's degree student in Optimization and Algorithms area, by Universidade Federal Fluminense (UFF - RJ). My recent works can be seen in https://github.com/diasssavio/
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://diasssavio.me" # the base hostname & protocol for your site
+twitter_username: diasssavio
+github_username:  diasssavio
+
+# Build settings
+markdown: kramdown
