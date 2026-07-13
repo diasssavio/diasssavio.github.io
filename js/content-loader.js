@@ -38,45 +38,45 @@ class ContentLoader {
     getDefaultContent() {
         return {
             site: {
-                title: 'Dr. Academic Name',
-                subtitle: 'Assistant Professor of Computer Science',
-                university: 'University Name',
-                email: 'academic@university.edu',
-                phone: '(555) 123-4567',
-                office: 'Room 456, Academic Building'
+                title: 'Sávio S. Dias, D.Sc.',
+                subtitle: 'Assistant Professor - Institute of Mathematics and Computing',
+                university: 'Federal University of Itajubá',
+                email: 'dias@unifei.edu.br',
+                phone: '(35) 3629-1836',
+                office: 'Room C.1.2.56, IMC Building (C1)'
             },
             index: {
-                title: 'Dr. Academic Name',
-                subtitle: 'Assistant Professor of Computer Science',
-                description: 'Welcome to my academic portfolio. I am a passionate researcher and educator specializing in artificial intelligence, machine learning, and computational methods.',
+                title: 'Sávio S. Dias, D.Sc.',
+                subtitle: 'Assistant Professor - Institute of Mathematics and Computing, Federal University of Itajubá',
+                description: 'Welcome to my academic page. I am a passionate researcher and educator specialised in Operations Research, Combinatorial Optimisation, and Integer Programming. My work focuses on developing solutions to complex problems while fostering the next generation of computer scientists.',
                 recentNews: []
             },
             about: {
                 title: 'About Me',
                 subtitle: 'Academic Journey & Background',
-                biography: '<p>I am an Assistant Professor in the Department of Computer Science at University Name.</p>'
+                biography: '<p>I am an Assistant Professor in the Institute of Mathematics and Computing at Federal University of Itajubá (IMC/UNIFEI).</p>'
             },
             research: {
                 title: 'Research',
                 subtitle: 'Publications, Projects & Expertise',
-                description: 'My research focuses on developing ethical and interpretable AI systems.',
+                description: 'My research focuses on developing algorithms to solve hard optimisation problems.',
                 publications: []
             },
             teaching: {
                 title: 'Teaching',
                 subtitle: 'Inspiring the Next Generation of Computer Scientists',
-                description: 'I am passionate about making complex computer science concepts accessible.',
+                // description: 'I am passionate about making complex computer science concepts accessible.',
                 courses: []
             },
             contact: {
                 title: 'Contact Me',
-                subtitle: 'Let\'s Connect and Collaborate',
-                description: 'I\'m always interested in discussing research opportunities.',
+                subtitle: 'Let us Connect and Collaborate',
+                description: 'I am always interested in discussing research opportunities.',
                 contactInfo: {
-                    email: 'academic@university.edu',
-                    phone: '(555) 123-4567',
-                    'office-hours': 'MW 2-4 PM, F 10-12 PM',
-                    office: 'Room 456, Academic Building'
+                    email: 'dias@unifei.edu.br',
+                    phone: '(35) 3629-1836',
+                    'office-hours': 'Regular business hours',
+                    office: 'Room C.1.2.56, IMC Building (C1)'
                 }
             }
         };
