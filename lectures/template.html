@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{DISCIPLINA}} - Sávio S. Dias, D.Sc.</title>
+    <link rel="stylesheet" href="../style.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../imc_icon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="../index.html" class="logo">Sávio S. Dias, D.Sc.</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../index.html">Home</a></li>
+                <li class="nav-item"><a href="../about.html">About</a></li>
+                <li class="nav-item"><a href="../research.html">Research</a></li>
+                <li class="nav-item"><a href="../lectures.html">Lectures</a></li>
+                <li class="nav-item"><a href="../contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: calc(80px + 2rem) 0 2rem;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">{{DISCIPLINA}}</h1>
+                <p class="hero-subtitle">{{SUBTITULO}}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Sidebar Navigation -->
+                <aside class="sidebar">
+                    <nav class="sidebar-nav">
+                        <li><a href="#ementa" class="active">Ementa</a></li>
+                        <li><a href="#noticias">Notícias</a></li>
+                        <li><a href="#aulas">Aulas</a></li>
+                        <li><a href="#material">Material de Estudo</a></li>
+                        <li><a href="#atividades">Atividades</a></li>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="main-content">
+                    <!-- Ementa Section -->
+                    <section id="ementa" class="content-section">
+                        <h2>Ementa</h2>
+                        <div class="ementa">
+                            <p>
+                            {{EMENTA}}
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Notícias Section -->
+                    <section id="noticias" class="content-section"> 
+                        <h2>Notícias</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">{{DATA}}</div>
+                                <h3 class="timeline-title">{{TITULO}}</h3>
+                                <div class="timeline-description">
+                                    <strong>{{DESCRIÇÃO1}}</strong>{{DESCRIÇÃO2}}<br>
+                                    <a href="#">{{LINK}}</a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Aulas Section -->
+                    <section id="aulas" class="content-section">
+                        <h2>Aulas</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">{{DATA}}</div>
+                                <h3 class="timeline-title">{{AULA 1}}</h3>
+                                <div class="timeline-description">
+                                    <strong>{{DESCRIÇÃO1}}</strong>{{DESCRIÇÃO2}}<br>
+                                    <a href="#">{{LINK}}</a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Material de Estudo Section -->
+                    <section id="material" class="content-section">
+                        <h2>Material de Estudo</h2>
+                        <div class="grid grid-2" style="margin-top: 2rem;">
+                            <div class="card">
+                                <h3 class="card-title">{{MATERIAL 1}}</h3>
+                                <p>
+                                    <strong>{{DESCRIÇÃO1}}</strong>{{DESCRIÇÃO2}}<br>
+                                    <a href="#">{{LINK}}</a><br>
+                                </p>
+                            </div>
+                            <div class="card">
+                                <h3 class="card-title">{{MATERIAL 2}}</h3>
+                                <p>
+                                    <strong>{{DESCRIÇÃO3}}</strong>{{DESCRIÇÃO4}}<br>
+                                    <a href="#">{{LINK}}</a><br>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Atividades Section -->
+                    <section id="atividades" class="content-section">
+                        <h2>Atividades</h2>
+                        <div class="grid grid-2">
+                            <div>
+                                <h3>{{ATIVIDADE 1}}</h3>
+                                <p>
+                                    <strong>{{DESCRIÇÃO1}}</strong>{{DESCRIÇÃO2}}<br>
+                                    <a href="#">{{LINK}}</a><br>
+                                </p>
+                            </div>
+                            <div>
+                                <h3>{{ATIVIDADE 2}}</h3>
+                                <p>
+                                    <strong>{{DESCRIÇÃO3}}</strong>{{DESCRIÇÃO4}}<br>
+                                    <a href="#">{{LINK}}</a><br>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="../about.html">About</a>
+                    <a href="../research.html">Research</a>
+                    <a href="../lectures.html">Lectures</a>
+                    <a href="http://lattes.cnpq.br/5200274082450289">CV</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Research Areas</h4>
+                    <a href="../research.html#co">Combinatorial Optimisation</a>
+                    <a href="../research.html#or">Operations Research</a>
+                    <a href="../research.html#lip">Linear and Integer Programming</a>
+                    <a href="../research.html#so">Stochastic Optimisation</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="mailto:dias@unifei.edu.br">Email</a>
+                    <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+                    <a href="https://linkedin.com/diasssavio" target="_blank">LinkedIn</a>
+                    <a href="https://orcid.org/0009-0006-7806-6706" target="_blank">ORCID</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Institution</h4>
+                    <a href="https://unifei.edu.br" target="_blank">Federal University of Itajubá</a>
+                    <a href="https://imc.unifei.edu.br" target="_blank">Institute of Mathematics and Computing</a>
+                    <a href="../contact.html">Office Hours</a>
+                    <a href="../contact.html">Location</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sávio S. Dias, D.Sc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
