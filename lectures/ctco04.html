@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{DISCIPLINA}} - Sávio S. Dias, D.Sc.</title>
+    <title>CTCO04 - Sávio S. Dias, D.Sc.</title>
     <link rel="stylesheet" href="../style.css">
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
@@ -30,8 +30,8 @@
     <section class="hero" style="padding: calc(80px + 2rem) 0 2rem;">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">{{DISCIPLINA}}</h1>
-                <p class="hero-subtitle">{{SUBTITULO}}</p>
+                <h1 class="hero-title">CTCO04</h1>
+                <p class="hero-subtitle">Projeto e Análise de Algoritmos</p>
             </div>
         </div>
     </section>
@@ -58,32 +58,37 @@
                         <h2>Ementa</h2>
                         <div class="ementa">
                             <p>
-                            {{EMENTA}}
+                            <strong>Ementa:</strong> Técnicas de projeto e análise de algoritmos. Fundamentação matemática para análise de algoritmos. Projeto de algoritmos por indução. Busca, ordenação e estatísticas de ordem. Programação Dinâmica. Algoritmos Gulosos. Aleatorização de Algoritmos, Reduções entre problemas. Tratamento de Problemas NP-Difíceis.
                             </p>
                             <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
-                                <li><strong>Módulo 1:</strong> Fundamentos Matemáticos para Otimização (Aulas 1-4)</li>
-                                <li><strong>Módulo 2:</strong> Introdução à Otimização (Aulas 5-7)</li>
-                                <li><strong>Módulo 3:</strong> Otimização Contínua Restrita & Programação Linear (Aulas 8-15)</li>
-                                <li><strong>Módulo 4:</strong> Programação Linear Inteira (Aulas 16-21)</li>
-                                <li><strong>Módulo 5:</strong> Métodos de Decomposição (Aulas 22-26)</li>
-                                <li><strong>Módulo 6:</strong> <em>Everything, everywhere, all at once</em> (Aulas 27-30)</li>
+                                <li><strong>Módulo 1:</strong> Fundamentos e Pensamento Indutivo (Aulas 1-5)</li>
+                                <li><strong>Módulo 2:</strong> Algoritmos Clássicos e Paradigmas Determinísticos (Aulas 6-14)</li>
+                                <li><strong>Módulo 3:</strong> Aleatoriedade e Estruturas Avançadas (Aulas 15-19)</li>
+                                <li><strong>Módulo 4:</strong> Reduções e Computabilidade Tratável (Aulas 20-23)</li>
+                                <li><strong>Módulo 5:</strong> Tratamento de NP-Difíceis e Panorama (Aulas 24-28)</li>
                             </ul>
                             <p>
-                                <strong>Linguagem:</strong> Python com bibliotecas como <em>numpy</em>, <em>scipy.optimize</em> e <em>pulp</em> em aulas práticas, mas C/C++ é fortemente recomendado por performance.
+                                <strong>Linguagem:</strong> Pseudo-código e majoritariamente C/C++.
                             </p>
                             <p>
                                 <strong>Avaliações:</strong>
                                 <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
-                                    <li>\( N_1 = 0.2 \sum\limits_{i = 1}^n L_i + 0.2 \sum\limits_{i = 1}^m I_i + 0.6P_1 \), onde:</li>
+                                    <li>\( N_1 = \min \left\{ 10, 0.7 P_1 + 0.3 \sum\limits_{i = 1}^n L_i \right\} \), onde:</li>
                                     <ul style="margin-left: 2rem; margin-bottom: 1rem;">
-                                        <li>\( L \in [0,10]^n \) são listas de exercícios (via moodle), tipicamente semanais. \( \leq 2\) pessoas</li>
-                                        <li>\( I \in [0,10]^m \) são implementações das aulas (feitas ou pendentes). \( \leq 2 \) pessoas</li>
-                                        <li>\( P_1 \) é a 1ª prova teorica individual</li>
+                                        <li>\( P_1 \in [0,10] \) é a 1ª prova teorica individual, com consulta a material impresso</li>
+                                        <li>\( L \in [0,10]^n \) são listas de exercícios (via moodle), tipicamente semanais. Cada lista será tipicamente composta de +- 3 questões: 1 teórica (prova de correção, recorrência, complexidade), 1 de implementação (passar em casos de teste secretos no Moodle) e 1 desafio (problema ACM/ICPC).</li>
                                     </ul>
-                                    <li>\( N_2 = 0.6 T_F + 0.4 P_2 \), onde:</li>
+                                    <li>\( N_2 = \min \left\{ 10, 0.4 P_2 + 0.3 T_T + 0.3 T_P \right\} \), onde:</li>
                                     <ul style="margin-left: 2rem; margin-bottom: 1rem;">
-                                        <li>\( T_F \) é a nota do trabalho final (<em>paper</em> escrito e apresentação). \( \leq 3 \) pessoas</li>
-                                        <li>\( P_2 \) é a 2ª prova teorica individual</li>
+                                        <li>\( P_2 \in [0,10] \) é a 2ª prova teorica individual, com consulta a material impresso</li>
+                                        <li>\( T_T \in [0,10] \) é um trabalho teórico (duplas ou trios), que envolve a demonstração de redução de um problema \( \mathcal{NP} \)-Completo sorteado e teoremas de aproximação e/ou outros componentes teóricos pertinentes.</li>
+                                        <li>\( T_P \in [0,10] \) é um trabalho prático (duplas ou trios), que envolve a implementação, análise e apresentação de algoritmo para um problema \( \mathcal{NP} \)-Difícil sorteado: exato, heurístico, aproximativo, DP exato/heurístico. <strong>Rubrica de Código para o Projeto:</strong></li>
+                                        <ol style="margin-left: 2.5rem; margin-bottom: 1rem;">
+                                            <li><strong>Corretude (40%):</strong>Passa nos testes de propriedade e casos extremos.</li>
+                                            <li><strong>Eficiência (30%):</strong>Complexidade prática medida por <em>benchmarking</em>.</li>
+                                            <li><strong>Design e Legibilidade (20%):</strong>Modularização, uso de TADs, estilo.</li>
+                                            <li><strong>Análise do Relatório (10%):</strong>Gráficos, discussão de <em>trade-offs</em>.</li>
+                                        </ol>
                                     </ul>
                                 </ul>
                                 <p><strong>P.S.</strong> Notas extras podem ser dadas mediante participações e engajamento nas aulas.</p>
@@ -96,12 +101,12 @@
                         <h2>Notícias</h2>
                         <div class="timeline">
                             <div class="timeline-item">
-                                <div class="timeline-date">{{DATA}}</div>
-                                <h3 class="timeline-title">{{TITULO}}</h3>
-                                <div class="timeline-description">
+                                <div class="timeline-date">06 de Agosto de 2026</div>
+                                <h3 class="timeline-title">Começo da Disciplina</h3>
+                                <!-- <div class="timeline-description">
                                     <strong>{{DESCRIÇÃO1}}</strong>{{DESCRIÇÃO2}}<br>
                                     <a href="#">{{LINK}}</a><br>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </section>
@@ -111,12 +116,52 @@
                         <h2>Aulas</h2>
                         <div class="timeline">
                             <div class="timeline-item">
-                                <div class="timeline-date">{{DATA}}</div>
-                                <h3 class="timeline-title">{{AULA 1}}</h3>
-                                <div class="timeline-description">
+                                <div class="timeline-date">06 de Agosto de 2026</div>
+                                <h3 class="timeline-title">Aula 0: Apresentação da Disciplina</h3>
+                                <!-- <div class="timeline-description">
                                     <strong>{{DESCRIÇÃO1}}</strong>{{DESCRIÇÃO2}}<br>
                                     <a href="#">{{LINK}}</a><br>
-                                </div>
+                                </div> -->
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">07 de Agosto de 2026</div>
+                                <h3 class="timeline-title">Aula 1: O que é Análise de Algoritmos?</h3>
+                                <!-- <div class="timeline-description">
+                                    <strong>{{DESCRIÇÃO1}}</strong>{{DESCRIÇÃO2}}<br>
+                                    <a href="#">{{LINK}}</a><br>
+                                </div> -->
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">13 de Agosto de 2026</div>
+                                <h3 class="timeline-title">Aula 2: Notação assintótica</h3>
+                                <!-- <div class="timeline-description">
+                                    <strong>{{DESCRIÇÃO1}}</strong>{{DESCRIÇÃO2}}<br>
+                                    <a href="#">{{LINK}}</a><br>
+                                </div> -->
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">14 de Agosto de 2026</div>
+                                <h3 class="timeline-title">Aula 3: Fundamentação Matemática: Recorrências</h3>
+                                <!-- <div class="timeline-description">
+                                    <strong>{{DESCRIÇÃO1}}</strong>{{DESCRIÇÃO2}}<br>
+                                    <a href="#">{{LINK}}</a><br>
+                                </div> -->
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">20 de Agosto de 2026</div>
+                                <h3 class="timeline-title">Aula 4: Projeto de Algoritmos por Indução I</h3>
+                                <!-- <div class="timeline-description">
+                                    <strong>{{DESCRIÇÃO1}}</strong>{{DESCRIÇÃO2}}<br>
+                                    <a href="#">{{LINK}}</a><br>
+                                </div> -->
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">21 de Agosto de 2026</div>
+                                <h3 class="timeline-title">Aula 5: Projeto de Algoritmos por Indução II</h3>
+                                <!-- <div class="timeline-description">
+                                    <strong>{{DESCRIÇÃO1}}</strong>{{DESCRIÇÃO2}}<br>
+                                    <a href="#">{{LINK}}</a><br>
+                                </div> -->
                             </div>
                         </div>
                     </section>
@@ -126,10 +171,10 @@
                         <h2>Material de Estudo</h2>
                         <div class="grid grid-2" style="margin-top: 2rem;">
                             <div class="card">
-                                <h3 class="card-title">{{MATERIAL 1}}</h3>
+                                <h3 class="card-title"><a href="https://github.com/L-OtimIC/ctco04" target="_blank"><img src="../code.png" style="width:32px; height:32px; vertical-align:middle;"> GitHub</a></h3>
                                 <p>
-                                    <strong>{{DESCRIÇÃO1}}</strong>{{DESCRIÇÃO2}}<br>
-                                    <a href="#">{{LINK}}</a><br>
+                                    <!-- <strong>Códigos da turma</strong><br> -->
+                                    Repositório com implementações feitas em aula.
                                 </p>
                             </div>
                             <div class="card">
