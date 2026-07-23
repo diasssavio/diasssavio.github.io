@@ -34,6 +34,21 @@ function initNavigation() {
             });
         }
     });
+
+    document.querySelector('.sidebar-nav').addEventListener('click', function(e) {
+        // Find the clicked <a> tag
+        const link = e.target.closest('a');
+        
+        if (link) {
+            // Remove 'active' class from all anchor tags
+            document.querySelectorAll('.sidebar-nav a').forEach(a => {
+                a.classList.remove('active');
+            });
+            
+            // Add 'active' class to the clicked link
+            link.classList.add('active');
+        }
+    });
 }
 
 
