@@ -73,12 +73,12 @@
                             <p>
                                 <strong>Avaliações:</strong>
                                 <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
-                                    <li>\( N_1 = \min \left\{ 10, 0.7 P_1 + 0.3 \sum\limits_{i = 1}^n L_i \right\} \), onde:</li>
+                                    <li>\( N_1 = \min \left\{ 10, 0.7 P_1 + 0.3 \sum\limits_{i = 1}^n L_i + \epsilon \right\} \), onde:</li>
                                     <ul style="margin-left: 2rem; margin-bottom: 1rem;">
                                         <li>\( P_1 \in [0,10] \) é a 1ª prova teorica individual, com consulta a material impresso</li>
-                                        <li>\( L \in [0,10]^n \) são listas de exercícios (via moodle), tipicamente semanais. Cada lista será tipicamente composta de +- 3 questões: 1 teórica (prova de correção, recorrência, complexidade), 1 de implementação (passar em casos de teste secretos no Moodle) e 1 desafio (problema ACM/ICPC).</li>
+                                        <li>\( L \in [0,10]^n \) são listas de exercícios (via moodle), tipicamente semanais.</li>
                                     </ul>
-                                    <li>\( N_2 = \min \left\{ 10, 0.4 P_2 + 0.3 T_T + 0.3 T_P \right\} \), onde:</li>
+                                    <li>\( N_2 = \min \left\{ 10, 0.4 P_2 + 0.3 T_T + 0.3 T_P + \epsilon \right\} \), onde:</li>
                                     <ul style="margin-left: 2rem; margin-bottom: 1rem;">
                                         <li>\( P_2 \in [0,10] \) é a 2ª prova teorica individual, com consulta a material impresso</li>
                                         <li>\( T_T \in [0,10] \) é um trabalho teórico (duplas ou trios), que envolve a demonstração de redução de um problema \( \mathcal{NP} \)-Completo sorteado e teoremas de aproximação e/ou outros componentes teóricos pertinentes.</li>
@@ -90,8 +90,8 @@
                                             <li><strong>Análise do Relatório (10%):</strong>Gráficos, discussão de <em>trade-offs</em>.</li>
                                         </ol>
                                     </ul>
+                                    <li>Notas extras \( \epsilon \geq 0 \) podem ser dadas mediante participações e engajamento nas aulas.</li>
                                 </ul>
-                                <p><strong>P.S.</strong> Notas extras podem ser dadas mediante participações e engajamento nas aulas.</p>
                             </p>
                         </div>
                     </section>
